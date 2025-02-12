@@ -1,0 +1,359 @@
+object DisplayArray: TDisplayArray
+  Left = 227
+  Top = 108
+  BorderStyle = Single
+  Caption = 'Display Camera Array'
+  ClientHeight = 479
+  ClientWidth = 1264
+  Fill.Color = xFFF0F0F0
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnActivate = Read_ArrayClick
+  OnCreate = FormCreate
+  Left = 227
+  Top = 108
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    StyledSettings = []
+    Position.X = 591.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 96.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Courier'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.VertAlign = Leading
+    TextSettings.WordWrap = False
+    Text = 'Camera Model'
+    TabOrder = 9
+  end
+  object Label2: TLabel
+    StyledSettings = []
+    Position.X = 464.000000000000000000
+    Position.Y = 421.000000000000000000
+    Size.Width = 88.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Courier'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.VertAlign = Leading
+    TextSettings.WordWrap = False
+    Text = 'Search Text'
+    TabOrder = 11
+  end
+  object Label3: TLabel
+    StyledSettings = []
+    Position.X = 116.000000000000000000
+    Position.Y = 419.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Courier'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.VertAlign = Leading
+    TextSettings.WordWrap = False
+    Text = 'Search Number'
+    TabOrder = 16
+  end
+  object Label4: TLabel
+    StyledSettings = []
+    Position.X = 8.000000000000000000
+    Position.Y = 46.000000000000000000
+    Size.Width = 88.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Courier'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.VertAlign = Leading
+    TextSettings.WordWrap = False
+    Text = 'File Source'
+    TabOrder = 18
+  end
+  object Label5: TLabel
+    StyledSettings = []
+    Position.X = 8.000000000000000000
+    Position.Y = 18.000000000000000000
+    Size.Width = 88.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Courier'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.VertAlign = Leading
+    TextSettings.WordWrap = False
+    Text = 'Header Text'
+    TabOrder = 19
+  end
+  object Label6: TLabel
+    StyledSettings = []
+    Position.X = 1186.000000000000000000
+    Position.Y = 329.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Courier'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.VertAlign = Leading
+    TextSettings.WordWrap = False
+    Text = 'Start'
+    TabOrder = 21
+  end
+  object Label7: TLabel
+    StyledSettings = []
+    Position.X = 1186.000000000000000000
+    Position.Y = 431.000000000000000000
+    Size.Width = 24.000000000000000000
+    Size.Height = 13.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Courier'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.VertAlign = Leading
+    TextSettings.WordWrap = False
+    Text = 'End'
+    TabOrder = 23
+  end
+  object Read_Array: TButton
+    Default = True
+    ModalResult = 1
+    Position.X = 1173.000000000000000000
+    Position.Y = 29.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXButtonStyle'
+    TabOrder = 0
+    Text = 'Read'
+    TextSettings.Trimming = None
+    OnClick = Read_ArrayClick
+  end
+  object CancelBtn: TButton
+    Cancel = True
+    ModalResult = 2
+    Position.X = 1173.000000000000000000
+    Position.Y = 59.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXButtonStyle'
+    TabOrder = 1
+    Text = 'Cancel'
+    TextSettings.Trimming = None
+    OnClick = CancelBtnClick
+  end
+  object Array_Display: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'Array_Display')
+    StyledSettings = []
+    TextSettings.Font.Family = 'Courier'
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.WordWrap = True
+    Position.X = 8.000000000000000000
+    Position.Y = 65.000000000000000000
+    Size.Width = 1145.000000000000000000
+    Size.Height = 350.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXMemoStyle'
+    TabOrder = 2
+    Viewport.Width = 1141.000000000000000000
+    Viewport.Height = 346.000000000000000000
+  end
+  object End_Address: TSpinBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Cursor = crIBeam
+    Min = 1.000000000000000000
+    Max = 57334.000000000000000000
+    Value = 300.000000000000000000
+    Increment = 10.000000000000000000
+    Position.X = 1186.000000000000000000
+    Position.Y = 401.000000000000000000
+    Size.Width = 62.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    OnChange = End_AddressChange
+  end
+  object Memo_Text: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'Memo_Text')
+    ShowScrollBars = False
+    StyledSettings = []
+    TextSettings.Font.Family = 'Calibri'
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Position.X = 116.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 437.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXMemoStyle'
+    TabOrder = 4
+    Viewport.Width = 433.000000000000000000
+    Viewport.Height = 16.000000000000000000
+  end
+  object Camera_Type: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'Camera Model')
+    ShowScrollBars = False
+    StyledSettings = []
+    TextSettings.Font.Family = 'Calibri'
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.WordWrap = True
+    Position.X = 693.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 108.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXMemoStyle'
+    TabOrder = 5
+    Viewport.Width = 104.000000000000000000
+    Viewport.Height = 16.000000000000000000
+  end
+  object Start_Address: TSpinBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Cursor = crIBeam
+    Max = 38912.000000000000000000
+    Value = 300.000000000000000000
+    Increment = 10.000000000000000000
+    Position.X = 1186.000000000000000000
+    Position.Y = 350.000000000000000000
+    Size.Width = 62.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    OnChange = End_AddressChange
+  end
+  object NumberBox1: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Cursor = crIBeam
+    Size.Width = 57.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Left = 116
+    Top = 439
+  end
+  object GoNumber: TButton
+    Position.X = 179.000000000000000000
+    Position.Y = 438.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXButtonStyle'
+    TabOrder = 17
+    Text = 'Find'
+    TextSettings.Trimming = None
+    OnClick = FindNumberClick
+  end
+  object Find: TButton
+    Position.X = 631.000000000000000000
+    Position.Y = 438.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXButtonStyle'
+    TabOrder = 20
+    Text = 'Find'
+    TextSettings.Trimming = None
+    OnClick = FindTextClick
+  end
+  object SearchText: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'Searc')
+    MaxLength = 5
+    Position.X = 464.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXMemoStyle'
+    TabOrder = 22
+    Viewport.Width = 157.000000000000000000
+    Viewport.Height = 17.000000000000000000
+  end
+  object File_Type: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'Searc')
+    MaxLength = 5
+    Position.X = 116.000000000000000000
+    Position.Y = 42.000000000000000000
+    Size.Width = 125.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXMemoStyle'
+    TabOrder = 7
+    Viewport.Width = 121.000000000000000000
+    Viewport.Height = 17.000000000000000000
+  end
+  object CheckBox1: TCheckBox
+    Position.X = 312.000000000000000000
+    Position.Y = 42.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXCheckBoxStyle'
+    TabOrder = 8
+    Text = '   Show ASCII'
+    OnClick = CheckBox1Click
+  end
+  object NextText: TButton
+    Position.X = 710.000000000000000000
+    Position.Y = 438.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXButtonStyle'
+    TabOrder = 10
+    Text = 'Next'
+    TextSettings.Trimming = None
+    OnClick = NextTextClick
+  end
+  object NextNumber: TButton
+    Position.X = 258.000000000000000000
+    Position.Y = 438.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXButtonStyle'
+    TabOrder = 12
+    Text = 'Next'
+    TextSettings.Trimming = None
+    OnClick = NextNumberClick
+  end
+  object Show2DArray1: TButton
+    Position.X = 1173.000000000000000000
+    Position.Y = 101.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXButtonStyle'
+    TabOrder = 13
+    Text = 'Wheels'
+    TextSettings.Trimming = None
+    OnClick = Show2DArray1Click
+  end
+  object Button1: TButton
+    Position.X = 1173.000000000000000000
+    Position.Y = 132.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'VCL2FMXButtonStyle'
+    TabOrder = 15
+    Text = 'Buttons'
+    TextSettings.Trimming = None
+    OnClick = Show2DArray2Click
+  end
+end

@@ -1,0 +1,42 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'About'
+  ClientHeight = 174
+  ClientWidth = 589
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 1
+  object Label2: TLabel
+    Position.X = 96.000000000000000000
+    Position.Y = 103.000000000000000000
+    Size.Width = 417.000000000000000000
+    Size.Height = 52.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      'with Support and advice from Bub and Andy, without whose help th' +
+      'is could not have been completed. A special mention also to Paul' +
+      ', who tirelessly helped in the testing of the prototype product.'
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Position.X = 159.000000000000000000
+    Position.Y = 21.000000000000000000
+    Size.Width = 290.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'This Programme was conceived and Designed by'
+    TabOrder = 2
+  end
+  object Label3: TLabel
+    Position.X = 280.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Ian Day.'
+    TabOrder = 3
+  end
+end

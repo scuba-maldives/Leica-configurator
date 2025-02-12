@@ -1,0 +1,52 @@
+package Likea;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  bindengine,
+  fmx,
+  bindcomp;
+
+contains
+  AboutFMX in 'AboutFMX.pas' {Form4},
+  Arrays in 'Arrays.pas',
+  Ask_QuestionFMX in 'Ask_QuestionFMX.pas' {Ask},
+  Camera_Parameters in 'Camera_Parameters.pas',
+  Common_Parameters in 'Common_Parameters.pas',
+  Constants in 'Constants.pas',
+  CTLoaderFMX in 'CTLoaderFMX.pas' {OFSelector},
+  CustomFMX in 'CustomFMX.pas' {Custom},
+  DecodeFMX in 'DecodeFMX.pas',
+  DisplayArrayFMX in 'DisplayArrayFMX.pas' {DisplayArray},
+  FandPs in 'FandPs.pas',
+  Main_FormFMX in 'Main_FormFMX.pas' {Main_Form},
+  MyTypes in 'MyTypes.pas',
+  RecodeFMX in 'RecodeFMX.pas';
+
+end.

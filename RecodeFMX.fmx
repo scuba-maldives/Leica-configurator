@@ -1,0 +1,9 @@
+﻿object Recode: TRecode
+  Left = 0
+  Top = 0
+  Caption = 'Recode'
+  Height = 289
+  Width = 554
+  Fill.Color = xFFF0F0F0
+  Fill.Kind = Solid
+end

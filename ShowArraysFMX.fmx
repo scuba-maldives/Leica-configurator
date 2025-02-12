@@ -1,0 +1,115 @@
+object Arrays: TArrays
+  Left = 0
+  Top = 0
+  Caption = 'Arrays'
+  ClientHeight = 888
+  ClientWidth = 982
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 606.000000000000000000
+    Position.Y = 12.000000000000000000
+    Size.Width = 64.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.VertAlign = Leading
+    Text = 'Status ='
+    TabOrder = 4
+  end
+  object ArrayGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 41.000000000000000000
+    Size.Width = 953.000000000000000000
+    Size.Height = 891.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 125
+    Viewport.Width = 933.000000000000000000
+    Viewport.Height = 866.000000000000000000
+    object StringColumn1: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn2: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn3: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn4: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn5: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn6: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn7: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn8: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn9: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+  end
+  object StatusCombo: TComboEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    ItemHeight = 19.000000000000000000
+    Items.Strings = (
+      'Empty Array'
+      'Decoded'
+      'Changed'
+      'Saved'
+      'Do Not Search'
+      'Did Not Search'
+      'Failed to Save')
+    ItemIndex = -1
+    Text = '0'
+    Position.X = 656.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    OnChange = StatusComboChange
+    OnEnter = StatusComboEnter
+    Left = 872
+    Top = 8
+  end
+  object SaveArraysButton: TButton
+    StyledSettings = [Other]
+    Position.X = 502.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 94.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Save Arrays'
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Trimming = None
+    OnClick = SaveArraysButtonClick
+  end
+  object DefaultsButton: TButton
+    StyledSettings = [Other]
+    Position.X = 400.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 94.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Save Defaults'
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Trimming = None
+    OnClick = SaveDefaultsButtonClick
+  end
+end

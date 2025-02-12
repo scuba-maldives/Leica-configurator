@@ -1,0 +1,65 @@
+object OFSelector: TOFSelector
+  Left = 0
+  Top = 0
+  Caption = 'Output File Selector'
+  ClientHeight = 89
+  ClientWidth = 335
+  Position = ScreenCenter
+  Quality = HighQuality
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormCreate
+  DesignerMasterStyle = 0
+  object CTLoader_OK: TButton
+    StyledSettings = [Other]
+    Position.X = 224.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'OK'
+    TextSettings.Trimming = None
+    OnClick = CTLoader_OKClick
+  end
+  object CTLoader_Cancel: TButton
+    StyledSettings = [Other]
+    Position.X = 224.000000000000000000
+    Position.Y = 39.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Cancel'
+    TextSettings.Trimming = None
+    OnClick = CTLoader_CancelClick
+  end
+  object CameraTypeCB: TComboEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    ItemHeight = 19.000000000000000000
+    Items.Strings = (
+      'Leica SL(601)'
+      'Leica SL2'
+      'Leica SL2S'
+      'Leica SL3'
+      'Leica SL3-S'
+      'Leica Q'
+      'Leica Q2'
+      'Leica Q3'
+      'Leica Q3 43'
+      'Leica M'
+      'Leica M11'
+      'Leica Q2 Mono')
+    ItemIndex = -1
+    Text = 'Choose Camera Type'
+    Position.X = 31.000000000000000000
+    Position.Y = 23.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Left = 16
+    Top = 21
+  end
+end

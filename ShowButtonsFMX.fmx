@@ -1,0 +1,238 @@
+object ButtonsForm: TButtonsForm
+  Left = 420
+  Top = 100
+  BorderStyle = Single
+  Caption = 'Buttons'
+  ClientHeight = 568
+  ClientWidth = 841
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  Left = 420
+  Top = 100
+  DesignerMasterStyle = 0
+  object ButtonGrid4: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 18.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 817.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 2
+    Viewport.Width = 813.000000000000000000
+    Viewport.Height = 48.000000000000000000
+    object StringColumn9: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn10: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn11: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn12: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn13: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn14: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn15: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn16: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+  end
+  object ButtonGrid3: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 18.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 817.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 2
+    Viewport.Width = 813.000000000000000000
+    Viewport.Height = 48.000000000000000000
+    object StringColumn1: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn2: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn3: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn4: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn5: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn6: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn7: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn8: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+  end
+  object ButtonGrid9: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 18.000000000000000000
+    Position.Y = 205.000000000000000000
+    Size.Width = 817.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    RowCount = 2
+    Viewport.Width = 813.000000000000000000
+    Viewport.Height = 48.000000000000000000
+    object StringColumn17: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn18: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn19: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn20: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn21: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn22: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn23: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn24: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+  end
+  object ButtonGrid20: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 18.000000000000000000
+    Position.Y = 396.000000000000000000
+    Size.Width = 817.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    RowCount = 2
+    Viewport.Width = 813.000000000000000000
+    Viewport.Height = 48.000000000000000000
+    object StringColumn33: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn34: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn35: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn36: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn37: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn38: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn39: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn40: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+  end
+  object ButtonGrid10: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 18.000000000000000000
+    Position.Y = 301.000000000000000000
+    Size.Width = 817.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    RowCount = 2
+    Viewport.Width = 813.000000000000000000
+    Viewport.Height = 48.000000000000000000
+    object StringColumn25: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn26: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn27: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn28: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn29: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn30: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn31: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn32: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+  end
+  object ButtonGridFn: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 18.000000000000000000
+    Position.Y = 489.000000000000000000
+    Size.Width = 817.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    RowCount = 2
+    Viewport.Width = 813.000000000000000000
+    Viewport.Height = 48.000000000000000000
+    object StringColumn41: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn42: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn43: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn44: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn45: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn46: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn47: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+    object StringColumn48: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+    end
+  end
+end

@@ -1,0 +1,28 @@
+inherited With_Prog_Macintosh: TWith_Prog_Macintosh
+  ClientHeight = 218
+  ClientWidth = 588
+  DesignerMasterStyle = 1
+  inherited NewStaticText: TLabel
+    Position.X = 37.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 542.000000000000000000
+    Size.Height = 40.000000000000000000
+  end
+  inherited NewStaticText1: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 417.000000000000000000
+    Size.Height = 25.000000000000000000
+  end
+  inherited NewStaticText2: TLabel
+    Position.X = 67.000000000000000000
+    Position.Y = 114.000000000000000000
+    Size.Width = 462.000000000000000000
+    Size.Height = 25.000000000000000000
+  end
+  inherited NewStaticText3: TLabel
+    Position.X = 83.000000000000000000
+    Position.Y = 153.000000000000000000
+    Size.Width = 433.000000000000000000
+  end
+end

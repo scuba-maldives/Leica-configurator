@@ -1,0 +1,50 @@
+object Profiles: TProfiles
+  Left = 0
+  Top = 0
+  Caption = 'FilmStyle Profiles'
+  ClientHeight = 188
+  ClientWidth = 703
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 687.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowCount = 6
+    Viewport.Width = 667.000000000000000000
+    Viewport.Height = 120.000000000000000000
+    object StringColumn1: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 113.000000000000000000
+    end
+    object StringColumn2: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 108.000000000000000000
+    end
+    object StringColumn3: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 103.000000000000000000
+    end
+    object StringColumn4: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 106.000000000000000000
+    end
+    object StringColumn5: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 117.000000000000000000
+    end
+    object StringColumn6: TStringColumn
+      HeaderSettings.TextSettings.WordWrap = False
+      Size.Width = 104.000000000000000000
+    end
+  end
+end

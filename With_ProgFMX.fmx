@@ -1,0 +1,66 @@
+object With_Prog: TWith_Prog
+  Left = 0
+  Top = 0
+  Caption = 'Help with Program'
+  ClientHeight = 187
+  ClientWidth = 508
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 1
+  object NewStaticText: TLabel
+    Position.X = 126.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.VertAlign = Leading
+    Text = 
+      'Select the Camera file you wish to edit using the menu option '#39'I' +
+      'mport'#39' in the file menu.'
+    TabOrder = 0
+  end
+  object NewStaticText1: TLabel
+    Position.X = 66.000000000000000000
+    Position.Y = 57.000000000000000000
+    Size.Width = 351.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.VertAlign = Leading
+    Text = 'In each section you can view the settings from your camera.'
+    TabOrder = 1
+  end
+  object NewStaticText2: TLabel
+    Position.X = 44.000000000000000000
+    Position.Y = 98.000000000000000000
+    Size.Width = 438.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.VertAlign = Leading
+    Text = 
+      'Then select the section you wish to inspect or change, from the ' +
+      'Edit menu.'
+    TabOrder = 2
+  end
+  object NewStaticText3: TLabel
+    Position.X = 51.000000000000000000
+    Position.Y = 137.000000000000000000
+    Size.Width = 423.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 11.000000000000000000
+    TextSettings.VertAlign = Leading
+    Text = 
+      'If you make any changes, click on OK to save changes or cancel t' +
+      'o quit. '
+    TabOrder = 3
+  end
+end

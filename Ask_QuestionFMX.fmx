@@ -1,0 +1,68 @@
+object Ask: TAsk
+  Left = 0
+  Top = 0
+  Caption = 'Ask Question'
+  ClientHeight = 100
+  ClientWidth = 349
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Advice: TLabel
+    StyledSettings = []
+    Position.X = 54.000000000000000000
+    Position.Y = 19.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.VertAlign = Leading
+    TabOrder = 3
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      'Memo1')
+    StyledSettings = [FontColor, Other]
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 13.000000000000000000
+    Position.X = 54.000000000000000000
+    Position.Y = 42.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 165.000000000000000000
+    Viewport.Height = 20.000000000000000000
+  end
+  object OK_Button: TButton
+    StyledSettings = [Other]
+    Position.X = 231.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'OK'
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Trimming = None
+    OnClick = OK_ButtonClick
+  end
+  object Cancel_Button: TButton
+    StyledSettings = [Other]
+    Position.X = 231.000000000000000000
+    Position.Y = 41.000000000000000000
+    Size.Width = 75.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Cancel'
+    TextSettings.Font.Family = 'Tahoma'
+    TextSettings.Font.Size = 13.000000000000000000
+    TextSettings.Trimming = None
+    OnClick = Cancel_ButtonClick
+  end
+end

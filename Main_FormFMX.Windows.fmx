@@ -1,0 +1,66 @@
+inherited Main_Form_Windows: TMain_Form_Windows
+  ClientHeight = 480
+  ClientWidth = 693
+  DesignerMasterStyle = 1
+  inherited Label13: TLabel
+    Size.Width = 65.000000000000000000
+  end
+  inherited Memo_Filename: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 25.000000000000000000
+  end
+  inherited Memo_FilmSim: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited JPG_Res: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_CamDetail: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited DNG_Res: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_WB: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited AspectRatio: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_Focus: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited SensorFormatSettings: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_DriveMode: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 693.000000000000000000
+  end
+  inherited Memo_IS: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited ISO: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_Kelvin: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited MenuBar1: TMenuBar
+    Size.Width = 693.000000000000000000
+  end
+end

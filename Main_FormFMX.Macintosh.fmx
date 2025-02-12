@@ -1,0 +1,58 @@
+inherited Main_Form_Macintosh: TMain_Form_Macintosh
+  DesignerMasterStyle = 1
+  inherited Memo_Filename: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 25.000000000000000000
+  end
+  inherited Memo_FilmSim: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited JPG_Res: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_CamDetail: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited DNG_Res: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_WB: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited AspectRatio: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_Focus: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited SensorFormatSettings: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_DriveMode: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_IS: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited ISO: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited Memo_Kelvin: TMemo
+    Viewport.Width = 350.000000000000000000
+    Viewport.Height = 21.000000000000000000
+  end
+  inherited ImageControl1: TImageControl
+    Position.Y = 158.000000000000000000
+  end
+end

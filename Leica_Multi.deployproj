@@ -1,0 +1,2266 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup/>
+    <ItemGroup Condition="'$(Platform)'=='OSX64'">
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Trial\Leica_Multi.info.plist" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\</RemoteDir>
+            <RemoteName>Leica_Multi.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Trial\Leica_Multi.entitlements" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\..\</RemoteDir>
+            <RemoteName>Leica_Multi.entitlements</RemoteName>
+            <DeployClass>ProjectOSXEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\</RemoteDir>
+            <RemoteName>Leica_Multi.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\Factory.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings M11.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings Q2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Debug\Leica_Multi" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>Leica_Multi</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Debug\Leica_Multi.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\..\</RemoteDir>
+            <RemoteName>Leica_Multi.entitlements</RemoteName>
+            <DeployClass>ProjectOSXEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>Factory.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Debug\Leica_Multi.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\StartUp\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX64\Trial\Leica_Multi" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>Leica_Multi</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\Factory.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings M11.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win32\Debug\Leica_Multi.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Leica_Multi.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings Q2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSXARM64'">
+        <DeployFile Include="..\Leica\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL2.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Debug\Leica_Multi.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Stellar_Mac.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_Stellar_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Stellar_Mac.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_Stellar_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings M11.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings Q2.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings M11.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_OxfordBlueSE_Mac.style" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_OxfordBlueSE_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\FMXStyle-Stellar-1.0\Stellar_Mac.style" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Stellar_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL3.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\</RemoteDir>
+            <RemoteName>Leica_Multi.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\</RemoteDir>
+            <RemoteName>Leica_Multi.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL3.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Trial\Leica_Multi" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>Leica_Multi</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\Factory.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>Factory.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Trial\Leica_Multi.entitlements" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\..\</RemoteDir>
+            <RemoteName>Leica_Multi.entitlements</RemoteName>
+            <DeployClass>ProjectOSXEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>Custom 1.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Release\Leica_Multi.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\..\</RemoteDir>
+            <RemoteName>Leica_Multi.entitlements</RemoteName>
+            <DeployClass>ProjectOSXEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_OxfordBlueSE_Mac.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_OxfordBlueSE_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_OxfordBlueSE_Mac.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_OxfordBlueSE_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\Factory.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings M11.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Stellar_Mac.style" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_Stellar_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Carbon.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_Carbon.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Resources\</RemoteDir>
+            <RemoteName>Leica_Multi.icns</RemoteName>
+            <DeployClass>ProjectOSXResource</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\FMXStyle-Stellar-1.0\Stellar_Mac.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Stellar_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\FMXStyle-Stellar-1.0\Stellar_Mac.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Stellar_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL3.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Debug\Leica_Multi" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>Leica_Multi</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Release\Leica_Multi.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL3.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Release\Leica_Multi" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>Leica_Multi</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Debug\Leica_Multi.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\..\</RemoteDir>
+            <RemoteName>Leica_Multi.entitlements</RemoteName>
+            <DeployClass>ProjectOSXEntitlements</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings Q2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark_Mac.style" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark_Mac.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark_Mac.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSXARM64\Trial\Leica_Multi.info.plist" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <DeployClass>ProjectOSXInfoPList</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL2.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>Factory.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings Q2.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi.app\Contents\Templates\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\Settings SL3.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Template\</RemoteDir>
+            <RemoteName>Settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\Leica_Multi.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Leica_Multi.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Leica_Multi.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Leica_Multi.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\SettingsFiles\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\SettingsFiles\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL3.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL3.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Leica\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Template\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark_Mac.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark_Mac.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL2.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL2.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings Q2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Template\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL2-S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2-S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Template\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings M11.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Template\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\Factory.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings M11.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL3S.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3S.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\SettingsFiles\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Carbon.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\Styles\</RemoteDir>
+            <RemoteName>Ians_Carbon.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Carbon.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Styles\</RemoteDir>
+            <RemoteName>Ians_Carbon.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\SettingsFiles\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\SettingsFiles\settings Q2.lcs" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Template\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings Q2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\Settings SL3.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>Settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\Settings SL3.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>Settings SL3.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark.style" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark_Mac.style" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark_Mac.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL2-S.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2-S.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="All Platforms\Trial\Leica_Multi" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\</RemoteDir>
+            <RemoteName>Leica_Multi.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings Q3 43.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings Q3 43.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Carbon.style" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Styles\</RemoteDir>
+            <RemoteName>Ians_Carbon.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings Q2.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings Q2.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings Q2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\SettingsFiles\settings M11.lcse" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Settings\</RemoteDir>
+            <RemoteName>settings M11.lcse</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings M11.tmp" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings M11.tmp" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Templates\</RemoteDir>
+            <RemoteName>settings M11.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings SL3.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL3.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\SettingsFiles\settings SL.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings SL.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL2.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Template\</RemoteDir>
+            <RemoteName>settings SL2.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark.style" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Debug\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\..\..\..\..\..\Public\Documents\Embarcadero\Studio\23.0\Styles\Ians_Dark.style" Condition="'$(Config)'=='Release'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Release\Styles\</RemoteDir>
+            <RemoteName>Ians_Dark.style</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Templates\settings SL.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>C:\Users\Ian\Documents\Embarcadero\Studio\Projects\Leica_Multi\Win64\Trial\Template\</RemoteDir>
+            <RemoteName>settings SL.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\Factory.lcs" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>Factory.lcs</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Trial\Templates\settings Q3 43.tmp" Condition="'$(Config)'=='Trial'">
+            <RemoteDir>Leica_Multi\</RemoteDir>
+            <RemoteName>settings Q3 43.tmp</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64x'"/>
+</Project>

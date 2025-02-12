@@ -1,0 +1,202 @@
+inherited Custom_Surface: TCustom_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited Memo_Filename: TMemo
+    Viewport.Width = 265.000000000000000000
+    Viewport.Height = 25.000000000000000000
+  end
+  inherited PageControl1: TTabControl
+    Sizes = (
+      673s
+      409s
+      673s
+      409s
+      673s
+      409s
+      673s
+      409s
+      673s
+      409s
+      673s
+      409s
+      673s
+      409s
+      673s
+      409s
+      698s
+      409s
+      698s
+      409s
+      698s
+      409s
+      777s
+      409s
+      731s
+      409s)
+    inherited ImageTab: TTabItem
+      Size.Width = 53.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+    end
+    inherited AFMF_Tab: TTabItem
+      Size.Width = 55.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+    end
+    inherited CameraTab: TTabItem
+      Size.Width = 107.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      inherited Copyright: TMemo
+        Viewport.Width = 350.000000000000000000
+        Viewport.Height = 21.000000000000000000
+      end
+      inherited Artist: TMemo
+        Viewport.Width = 350.000000000000000000
+        Viewport.Height = 21.000000000000000000
+      end
+    end
+    inherited FilmTab: TTabItem
+      Size.Width = 71.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+    end
+    inherited SL3ButtonTab: TTabItem
+      Size.Width = 122.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      inherited Label30: TLabel
+        TabOrder = 323
+      end
+      inherited Label31: TLabel
+        TabOrder = 324
+      end
+      inherited Label32: TLabel
+        TabOrder = 325
+      end
+      inherited Label33: TLabel
+        TabOrder = 326
+      end
+      inherited Label34: TLabel
+        TabOrder = 327
+      end
+      inherited Label48: TLabel
+        TabOrder = 328
+      end
+      inherited Reset_Text: TLabel
+        TabOrder = 329
+      end
+      inherited ButtonEditor: TMemo
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Viewport.Width = 209.000000000000000000
+        Viewport.Height = 25.000000000000000000
+      end
+    end
+    inherited SL3WheelTab: TTabItem
+      Size.Width = 106.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      inherited Label35: TLabel
+        TabOrder = 323
+      end
+      inherited Label36: TLabel
+        TabOrder = 324
+      end
+      inherited Label37: TLabel
+        TabOrder = 325
+      end
+      inherited Label38: TLabel
+        TabOrder = 326
+      end
+      inherited Label39: TLabel
+        TabOrder = 327
+      end
+      inherited Label40: TLabel
+        TabOrder = 328
+      end
+      inherited Label41: TLabel
+        TabOrder = 329
+      end
+      inherited Label42: TLabel
+        TabOrder = 330
+      end
+      inherited Label43: TLabel
+        TabOrder = 331
+      end
+      inherited Label44: TLabel
+        TabOrder = 332
+      end
+      inherited Label45: TLabel
+        TabOrder = 333
+      end
+      inherited Label46: TLabel
+        TabOrder = 334
+      end
+      inherited Label50: TLabel
+        TabOrder = 335
+      end
+      inherited Memo1: TMemo
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Viewport.Width = 209.000000000000000000
+        Viewport.Height = 25.000000000000000000
+      end
+    end
+    inherited VideoTab: TTabItem
+      Size.Width = 51.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+    end
+    inherited JoystickTab: TTabItem
+      Size.Width = 61.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+    end
+    inherited QButtonTab: TTabItem
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      inherited Memo2: TMemo
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Viewport.Width = 209.000000000000000000
+        Viewport.Height = 25.000000000000000000
+      end
+    end
+    inherited SLButtonTab: TTabItem
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      inherited Memo3: TMemo
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Viewport.Width = 209.000000000000000000
+        Viewport.Height = 25.000000000000000000
+      end
+    end
+    inherited SLWheelTab: TTabItem
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      inherited Memo4: TMemo
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Viewport.Width = 209.000000000000000000
+        Viewport.Height = 25.000000000000000000
+      end
+    end
+    inherited QWheelTab: TTabItem
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      inherited Memo5: TMemo
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Viewport.Width = 209.000000000000000000
+        Viewport.Height = 25.000000000000000000
+      end
+    end
+    inherited MButtonTab: TTabItem
+      Size.Width = 122.000000000000000000
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 50.000000000000000000
+      inherited Memo6: TMemo
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Viewport.Width = 209.000000000000000000
+        Viewport.Height = 25.000000000000000000
+      end
+    end
+  end
+end
