@@ -6,7 +6,7 @@ interface
   var   Licenced  : Boolean;
 
 
-  const currentVersion: String ='v1.9';
+  const currentVersion: String ='R1.0';
 
 	var   LeftDial: boolean = True;                                               // Turn on or off dependant on specific camera type
   var   RearDial: boolean = True;
