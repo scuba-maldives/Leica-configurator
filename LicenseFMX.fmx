@@ -1,0 +1,286 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 922
+  ClientWidth = 1097
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Text3D1: TText3D
+    Width = 3.000000000000000000
+    Height = 2.000000000000000000
+    Depth = 0.300000011920929000
+    Flatness = 1.000000000000000000
+    Sides = [Front, Back, Shaft]
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Position.X = 327.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 417.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION'
+    TabOrder = 12
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 1063.000000000000000000
+    Size.Height = 176.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '1. Definitions.'#8220'License'#8221' shall mean the terms and conditions for' +
+      ' use, reproduction, and distribution as defined by Sections 1 th' +
+      'rough 9 of this document.'#8220'Licensor'#8221' shall mean the copyright own' +
+      'er or entity authorized by the copyright owner that is granting ' +
+      'the License.'#8220'Legal Entity'#8221' shall mean the union of the acting en' +
+      'tity and all other entities that control, are controlled by, or ' +
+      'are under common control with that entity. For the purposes of t' +
+      'his definition, '#8220'control'#8221' means (i) the power, direct or indirec' +
+      't, to cause the direction or management of such entity, whether ' +
+      'by contract or otherwise, or (ii) ownership of fifty percent (50' +
+      '%) or more of the outstanding shares, or (iii) beneficial owners' +
+      'hip of such entity.'#8220'You'#8221' (or '#8220'Your'#8221') shall mean an individual or' +
+      ' Legal Entity exercising permissions granted by this License.'#8220'So' +
+      'urce'#8221' form shall mean the preferred form for making modification' +
+      's, including but not limited to software source code, documentat' +
+      'ion source, and configuration files.'#8220'Object'#8221' form shall mean any' +
+      ' form resulting from mechanical transformation or translation of' +
+      ' a Source form, including but not limited to compiled object cod' +
+      'e, generated documentation, and conversions to other media types' +
+      '.'#8220'Work'#8221' shall mean the work of authorship, whether in Source or ' +
+      'Object form, made available under the License, as indicated by a' +
+      ' copyright notice that is included in or attached to the work (a' +
+      'n example is provided in the Appendix below).'#8220'Derivative Works'#8221' ' +
+      'shall mean any work, whether in Source or Object form, that is b' +
+      'ased on (or derived from) the Work and for which the editorial r' +
+      'evisions, annotations, elaborations, or other modifications repr' +
+      'esent, as a whole, an original work of authorship. For the purpo' +
+      'ses of this License, Derivative Works shall not include works th' +
+      'at remain separable from, or merely link (or bind by name) to th' +
+      'e interfaces of, the Work and Derivative Works thereof.'#8220'Contribu' +
+      'tion'#8221' shall mean any work of authorship, including the original ' +
+      'version of the Work and any modifications or additions to that '
+    TabOrder = 11
+  end
+  object Label3: TLabel
+    AutoSize = True
+    Position.X = 456.000000000000000000
+    Position.Y = 904.000000000000000000
+    Size.Width = 189.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'END OF TERMS AND CONDITIONS'
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 311.000000000000000000
+    Size.Width = 1063.000000000000000000
+    Size.Height = 61.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '2. Grant of Copyright License.Subject to the terms and condition' +
+      's of this License, each Contributor hereby grants to You a perpe' +
+      'tual, worldwide, non-exclusive, no-charge, royalty-free, irrevoc' +
+      'able copyright license to reproduce, prepare Derivative Works of' +
+      ', publicly display, publicly perform, sublicense, and distribute' +
+      ' the Work and such Derivative Works in Source or Object form.'
+    TabOrder = 10
+    object Label5: TLabel
+      AutoSize = True
+      Size.Width = 0.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
+    object Label14: TLabel
+      Position.Y = -106.000000000000000000
+      Size.Width = 1063.000000000000000000
+      Size.Height = 96.000000000000000000
+      Size.PlatformDefault = False
+      Text = 
+        'Work or Derivative Works thereof, that is intentionally submitte' +
+        'd to Licensor for inclusion in the Work by the copyright owner o' +
+        'r by an individual or Legal Entity authorized to submit on behal' +
+        'f of the copyright owner. For the purposes of this definition, '#8220 +
+        'submitted'#8221' means any form of electronic, verbal, or written comm' +
+        'unication sent to the Licensor or its representatives, including' +
+        ' but not limited to communication on electronic mailing lists, s' +
+        'ource code control systems, and issue tracking systems that are ' +
+        'managed by, or on behalf of, the Licensor for the purpose of dis' +
+        'cussing and improving the Work, but excluding communication that' +
+        ' is conspicuously marked or otherwise designated in writing by t' +
+        'he copyright owner as '#8220'Not a Contribution.'#8221#8220'Contributor'#8221' shall m' +
+        'ean Licensor and any individual or Legal Entity on behalf of who' +
+        'm a Contribution has been received by Licensor and subsequently ' +
+        'incorporated within the Work.'
+      TabOrder = 11
+      object Label15: TLabel
+        AutoSize = True
+        Size.Width = 0.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+      end
+    end
+  end
+  object Label6: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 354.000000000000000000
+    Size.Width = 1063.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '3. Grant of Patent License.Subject to the terms and conditions o' +
+      'f this License, each Contributor hereby grants to You a perpetua' +
+      'l, worldwide, non-exclusive, no-charge, royalty-free, irrevocabl' +
+      'e (except as stated in this section) patent license to make, hav' +
+      'e made, use, offer to sell, sell, import, and otherwise transfer' +
+      ' the Work, where such license applies only to those patent claim' +
+      's licensable by such Contributor that are necessarily infringed ' +
+      'by their Contribution(s) alone or by combination of their Contri' +
+      'bution(s) with the Work to which such Contribution(s) was submit' +
+      'ted. If You institute patent litigation against any entity (incl' +
+      'uding a cross-claim or counterclaim in a lawsuit) alleging that ' +
+      'the Work or a Contribution incorporated within the Work constitu' +
+      'tes direct or contributory patent infringement, then any patent ' +
+      'licenses granted to You under this License for that Work shall t' +
+      'erminate as of the date such litigation is filed.'
+    TabOrder = 9
+  end
+  object Label7: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 671.000000000000000000
+    Size.Width = 1019.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '6. Trademarks.This License does not grant permission to use the ' +
+      'trade names, trademarks, service marks, or product names of the ' +
+      'Licensor, except as required for reasonable and customary use in' +
+      ' describing the origin of the Work and reproducing the content o' +
+      'f the NOTICE file.'
+    TabOrder = 8
+  end
+  object Label8: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 448.000000000000000000
+    Size.Width = 1063.000000000000000000
+    Size.Height = 168.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '4. Redistribution.You may reproduce and distribute copies of the' +
+      ' Work or Derivative Works thereof in any medium, with or without' +
+      ' modifications, and in Source or Object form, provided that You ' +
+      'meet the following conditions:You must give any other recipients' +
+      ' of the Work or Derivative Works a copy of this License; andYou ' +
+      'must cause any modified files to carry prominent notices stating' +
+      ' that You changed the files; andYou must retain, in the Source f' +
+      'orm of any Derivative Works that You distribute, all copyright, ' +
+      'patent, trademark, and attribution notices from the Source form ' +
+      'of the Work, excluding those notices that do not pertain to any ' +
+      'part of the Derivative Works; andIf the Work includes a '#8220'NOTICE'#8221 +
+      ' text file as part of its distribution, then any Derivative Work' +
+      's that You distribute must include a readable copy of the attrib' +
+      'ution notices contained within such NOTICE file, excluding those' +
+      ' notices that do not pertain to any part of the Derivative Works' +
+      ', in at least one of the following places: within a NOTICE text ' +
+      'file distributed as part of the Derivative Works; within the Sou' +
+      'rce form or documentation, if provided along with the Derivative' +
+      ' Works; or, within a display generated by the Derivative Works, ' +
+      'if and wherever such third-party notices normally appear. The co' +
+      'ntents of the NOTICE file are for informational purposes only an' +
+      'd do not modify the License. You may add Your own attribution no' +
+      'tices within Derivative Works that You distribute, alongside or ' +
+      'as an addendum to the NOTICE text from the Work, provided that s' +
+      'uch additional attribution notices cannot be construed as modify' +
+      'ing the License.You may add Your own copyright statement to Your' +
+      ' modifications and may provide additional or different license t' +
+      'erms and conditions for use, reproduction, or distribution of Yo' +
+      'ur modifications, or for any such Derivative Works as a whole, p' +
+      'rovided Your use, reproduction, and distribution of the Work oth' +
+      'erwise complies with the conditions stated in this License.'
+    TabOrder = 5
+  end
+  object Label9: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 615.000000000000000000
+    Size.Width = 1063.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '5. Submission of Contributions.Unless You explicitly state other' +
+      'wise, any Contribution intentionally submitted for inclusion in ' +
+      'the Work by You to the Licensor shall be under the terms and con' +
+      'ditions of this License, without any additional terms or conditi' +
+      'ons. Notwithstanding the above, nothing herein shall supersede o' +
+      'r modify the terms of any separate license agreement you may hav' +
+      'e executed with Licensor regarding such Contributions.'
+    TabOrder = 3
+  end
+  object Label12: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 766.000000000000000000
+    Size.Width = 1063.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '8. Limitation of Liability.In no event and under no legal theory' +
+      ', whether in tort (including negligence), contract, or otherwise' +
+      ', unless required by applicable law (such as deliberate and gros' +
+      'sly negligent acts) or agreed to in writing, shall any Contribut' +
+      'or be liable to You for damages, including any direct, indirect,' +
+      ' special, incidental, or consequential damages of any character ' +
+      'arising as a result of this License or out of the use or inabili' +
+      'ty to use the Work (including but not limited to damages for los' +
+      's of goodwill, work stoppage, computer failure or malfunction, o' +
+      'r any and all other commercial damages or losses), even if such ' +
+      'Contributor has been advised of the possibility of such damages.'
+    TabOrder = 7
+  end
+  object Label13: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 840.000000000000000000
+    Size.Width = 1063.000000000000000000
+    Size.Height = 64.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '9. Accepting Warranty or Additional Liability.While redistributi' +
+      'ng the Work or Derivative Works thereof, You may choose to offer' +
+      ', and charge a fee for, acceptance of support, warranty, indemni' +
+      'ty, or other liability obligations and/or rights consistent with' +
+      ' this License. However, in accepting such obligations, You may a' +
+      'ct only on Your own behalf and on Your sole responsibility, not ' +
+      'on behalf of any other Contributor, and only if You agree to ind' +
+      'emnify, defend, and hold each Contributor harmless for any liabi' +
+      'lity incurred by, or claims asserted against, such Contributor b' +
+      'y reason of your accepting any such warranty or additional liabi' +
+      'lity.'
+    TabOrder = 6
+  end
+  object Label11: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 705.000000000000000000
+    Size.Width = 1063.000000000000000000
+    Size.Height = 64.000000000000000000
+    Size.PlatformDefault = False
+    Text = 
+      '7. Disclaimer of Warranty.Unless required by applicable law or a' +
+      'greed to in writing, Licensor provides the Work (and each Contri' +
+      'butor provides its Contributions) on an '#8220'AS IS'#8221' BASIS, WITHOUT W' +
+      'ARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, ' +
+      'including, without limitation, any warranties or conditions of T' +
+      'ITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTIC' +
+      'ULAR PURPOSE. You are solely responsible for determining the app' +
+      'ropriateness of using or redistributing the Work and assume any ' +
+      'risks associated with Your exercise of permissions under this Li' +
+      'cense.'
+    TabOrder = 4
+  end
+end

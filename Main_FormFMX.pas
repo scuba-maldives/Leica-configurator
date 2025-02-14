@@ -155,7 +155,7 @@ implementation
 
   uses  Constants, DecodeFMX, RecodeFMX, CTLoaderFMX, Common_Parameters,
         With_ProgFMX, Camera_Parameters,CustomFMX, ShowWheelsFMX,
-        ShowButtonsFMX, AboutFMX, ShowArraysFMX, DisplayarrayFMX, ShowProfilesFMX, VersionFMX;
+        ShowButtonsFMX, AboutFMX, ShowArraysFMX, DisplayarrayFMX, ShowProfilesFMX, VersionFMX, LicenseFMX;
 
 
 {$R *.FMX}
@@ -297,10 +297,6 @@ procedure TMain_Form.Logging1Click(Sender: TObject);
     end;
 
 
-procedure TMain_Form.LicenseClick(Sender: TObject);
-begin
-   //
-end;
 
 procedure TMain_Form.Load2Click(Sender: TObject);
     begin
@@ -972,6 +968,12 @@ procedure TMain_Form.AboutClick(Sender: TObject);
   begin
       Form4.ShowModal;
   end;
+
+
+procedure TMain_Form.LicenseClick(Sender: TObject);
+begin
+     Form2.ShowModal;
+end;
 
 
 procedure TMain_Form.WithProgramClick(Sender: TObject);
